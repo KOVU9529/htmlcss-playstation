@@ -1,0 +1,132 @@
+/*HEADER*/
+
+header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+}
+.logo{
+    background-color: black;
+    text-align: right;
+}
+.logo img{
+    width: 10%;
+    padding: 5px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.short-menu{
+    border: 1px solid gray;
+    padding: 0 4px;
+}
+li{
+    display: inline;
+}
+li img{
+    width: 1%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.lens img{
+    width: 10%;
+}
+/*HEADER*/
+
+/*MAIN*/
+
+/*FIRST-SECTION*/
+
+.first-section{
+   z-index: 1;
+   background-image: url(img-playstastion/jumbo-bg.png);
+   background-size: cover;
+   background-position: center;
+   background-position-y:+70px;
+   position: relative;
+}
+.content-jumbo{
+    padding-top: 350px;
+    padding-bottom: 50px;
+    text-align: left;
+    color: white;
+}
+.img-returnal img{
+    width: 100px;
+    height: 20px;
+}
+
+/*SECOND-SECTION*/
+.row{
+    padding: 5px;
+}
+.col-6.col-md-4.col-lg-2 img{
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+
+/*THIRD-SECTION*/
+
+.section-third{
+    text-align: center;
+}
+.blu{
+    color: #4e9adb;
+}
+.gray{
+    color: #828282;
+}
+
+/*FOUR-SECTION*/
+
+.col-12.col-md-6.col-lg-6 img{
+    width: 100%;
+}
+
+/*FIVE-SECTION*/
+
+.col-4.col-md-2.col-lg-2 img{
+    width: 100%; 
+}
+.col-4.col-md-2.col-lg-2:first-of-type{
+    border-bottom:1px solid  #4e9adb;
+}
+
+/*SIX-SECTION*/
+
+.img-it-takes-two img{
+    width: 200px;
+    height: 200px;
+}
+.section-six{
+    z-index: 1;
+    background-image: url(img-playstastion/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:991px){
+/*HEADER*/
+   
+    .view-xl{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) {
+/*HEADER*/
+
+    .short-menu{
+        display: none;
+    }
+    .row{
+        justify-content: space-between;
+    }
+    
+}
