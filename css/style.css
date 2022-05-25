@@ -49,6 +49,9 @@ a{
 
 /*MAIN*/
 
+section{
+    padding: 20px 0;
+}
 /*FIRST-SECTION*/
 
 .first-section{
@@ -71,7 +74,6 @@ a{
 }
 
 /*SECOND-SECTION*/
-
 
 .row{
     padding: 5px;
@@ -96,7 +98,6 @@ a{
 
 /*FOUR-SECTION*/
 
-
 .col-12.col-md-6.col-lg-6{
     background-color: white;
 }
@@ -116,8 +117,7 @@ a{
 /*SIX-SECTION*/
 
 .img-it-takes-two img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
 }
 .section-six{
     z-index: 1;
@@ -125,8 +125,8 @@ a{
     background-size: cover;
     background-position: center;
 }
-/*SEVEN-SECTION*/
 
+/*SEVEN-SECTION*/
 
 .seven-section{
     background-color: #1f1f1f;
@@ -136,6 +136,9 @@ a{
 .col-6.col-md-4.col-lg-2 h3{
     font-size: 20px;
     padding: 0 5px;
+}
+.title-seven{
+    padding: 13px;
 }
 
 /*EIGHT-SECTION*/
@@ -200,7 +203,6 @@ a{
     padding-top: 0px ;
     padding-bottom: 0px;
 }
-
 .eleven-section .container .row .col-12.col-md-6{
     text-align: left;
     color: white;
@@ -233,6 +235,31 @@ a{
 .col-6.col-md-3 img{
     width: 100%;
 }
+
+/*FOOTER*/
+
+footer{
+    background-color: #00439c;
+    color: white;
+    padding: 20px 0;
+}
+footer a{
+    vertical-align: middle;
+    color: white;
+}
+.col-12.col-lg-6 img{
+    width: 25%;
+}
+svg{
+    width: 15px;
+    vertical-align: middle;
+}
+.last-ul{
+    font-size: 10px;
+}
+.last-ul li {
+    display: block;
+}
 @media screen and (max-width:767px){
     .nine-section .container .row{
         padding-top: 20px ;
@@ -252,11 +279,11 @@ a{
     .img-nine img{
         width:50%;
     }
+    footer .col-12.col-md-6 .row{
+        flex-direction: column;
+    }
 }
-
 @media screen and (max-width:991px){
-/*HEADER*/
-
     .view-xl{
         display: none;
     }
@@ -267,16 +294,12 @@ a{
         width: 45%;
         font-size: 10px;
     }
-
 }
 @media screen and (min-width:992px) {
-/*HEADER*/
-
     .short-menu{
         display: none;
     }
     .row{
         justify-content: space-between;
     }
-    
 }
