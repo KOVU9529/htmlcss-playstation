@@ -5,6 +5,13 @@
  .btn{
   margin: 10px 0;
  }
+ .btn a:hover{
+    color: white;
+ }
+ .btn:hover{
+    border: 1px groove white;
+    border-radius: 20px;
+ }
 
 /*HEADER*/
 
@@ -45,6 +52,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+header a:hover{
+    font-weight: bold;
+    color: black;
+}
 .view-xl{
     width: 35%;
     text-align: end;
@@ -59,6 +70,9 @@ a{
     margin: 0;
     border-radius: 20px;
 }
+.btn.btn-dark a:hover{
+    transform: scale(2);
+}
 .lens img{
     width: 20px;
 }
@@ -66,7 +80,16 @@ a{
 
 /*MAIN*/
 
-section{
+.first-section,
+.second-section,
+.section-third,
+.section-four,
+.section-five,
+.section-six,
+.seven-section,
+.eight-section,
+.ten-section,
+.twelve-section{
     padding: 20px 0;
 }
 /*FIRST-SECTION*/
@@ -86,8 +109,8 @@ section{
     color: white;
 }
 .img-returnal img{
-    width: 100px;
-    height: 20px;
+    width: 250px;
+    margin-bottom: 40px;
 }
 
 /*SECOND-SECTION*/
@@ -100,11 +123,10 @@ section{
     padding: 3px;
     border-radius: 20px;
 }
-.col-6.col-md-4.col-lg-2 .vex{
-    width: 100%;
-    padding: 3px;
-    border-radius: 20px;
+.second-section .col-6.col-md-4.col-lg-2 img:hover{
+    transform: translateY(-20px);
     border: 2px solid blue;
+    border-radius: 20px;
 }
 
 /*THIRD-SECTION*/
@@ -132,8 +154,10 @@ section{
 
 .col-4.col-md-2.col-lg-2 img{
     width: 100%; 
+    opacity: 0.5;
 }
-.col-4.col-md-2.col-lg-2:first-of-type{
+.col-4.col-md-2.col-lg-2 img:hover{
+    opacity: 1;
     border-bottom:1px solid  #4e9adb;
 }
 
@@ -203,12 +227,14 @@ section{
 .img-nine img{
     width:70%;
 }
-.btn-light{
+ .nine-section .btn-light{
     color: blue;
     border-radius: 20px;
     width: 50%;
 }
-
+.nine-section .btn-light a:hover{
+    color: blue;
+}
 /*TEN-SECTION*/
 
 .ten-section .container{
@@ -246,6 +272,9 @@ section{
     border-radius: 20px;
     width: 50%;
 }
+.eleven-section .btn-light a:hover{
+    color: black;
+}
 
 /*TWELVE-SECTION*/
 
@@ -258,6 +287,9 @@ section{
 }
 .col-6.col-md-3 img{
     width: 100%;
+}
+.col-6.col-md-3 img:hover{
+    border-radius: 50%;
 }
 
 /*FOOTER*/
@@ -286,7 +318,6 @@ svg{
 }
 footer .final{
     text-decoration: underline;
-   
 }
 @media screen and (max-width:767px){
     .nine-section .container .row{
