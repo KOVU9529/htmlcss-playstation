@@ -99,7 +99,7 @@ header a:hover{
    background-image: url(img-playstastion/jumbo-bg.png);
    background-size: cover;
    background-position: center;
-   background-position-y:+70px;
+   background-position-y:+100px;
    position: relative;
 }
 .content-jumbo{
